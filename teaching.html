@@ -3,15 +3,29 @@ layout: default
 title: Tech Posts
 ---
 
-<main>
-<ul>
-  {% for post in site.posts %}
-    {% if post.category == "teaching" %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+<main style="height: 600px;">
+  <div class="brochure" style="padding: 10px 20px; margin: 20px auto; font-family: var(--sans-serif); text-align: center; background-color: white; color: black; max-width: 1000px; max-height: 2000px; height: 100%; align-items: center; border-radius: 20px;">
+    <h1 style="font-size: var(--h3);">
+    מורה פרטי למתמטיקה ותכנות בשפת פייתון
+    </h1>
+
+    <p style="font-size: var(--h4);">מתמטיקה</p>
+    <p>יסודי (כיתות ה׳ - ו׳)</p>
+    <p>חטיבת ביניים (כיתות ז׳ - ט׳)</p>
+
+    <p style="font-size: var(--h4); margin-top: 40px;">תכנות בשפת פייתון</p>
+    <p>חטיבת ביניים (עמ״ט)</p>
+
+    <div class="experience">
+      <p style="margin-top: 4rem; font-size: var(--h5);">
+        בוגר אוניברסיטת תל-אביב במדעי המחשב וכלכלה <br>
+        ניסיון בהוראה אישית ובקבוצות קטנות בחטיבת הביניים
+      </p>
+    </div>
+
+    <address style="font-size: var(--h4);">
+      <strong>saarw.teach@gmail.com</strong>
+    </address>
+  </div>
+
 </main>
