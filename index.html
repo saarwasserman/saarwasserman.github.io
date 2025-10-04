@@ -1,0 +1,30 @@
+---
+layout: default
+title: Home
+---
+
+<main>
+    <div class="about" style="grid-area: 1 / 1 / 3 / 2;">
+      <h1>Saar Wasserman</h1>
+      <h2>Software Developer</h2>
+      <div class="social">
+          <a href="https://www.linkedin.com/in/saar-wasserman/" target="_blank"><img src="/assets/images/InBug-Black.png" /></a>
+          <a href="https://github.com/saarwasserman" target="_blank"><img src="/assets/images/github-mark.png"/></a>
+      </div>
+    </div>
+ 
+    <!-- two medium posts 2nd to 3rd latest articles - left -->
+    <div class="posts">
+      {% for post in site.posts %}
+      <a href="{{ post.url }}" class="post-link">
+        <article>
+          <h2>{{ post.title }}</h2>
+          {{ post.excerpt }}
+        </article>
+      </a>
+      {% endfor %}
+    </div>
+
+    
+  </div>
+</main>
