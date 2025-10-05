@@ -234,3 +234,8 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+// handle hover in mobile (touch screen) devices
+@media (hover: none) {
+    a:hover { color: inherit; }
+}
