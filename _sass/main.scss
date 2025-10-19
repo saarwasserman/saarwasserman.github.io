@@ -26,7 +26,7 @@
 
     /* fonts */
     // --sans-serif: "Poppins", sans-serif;
-    --sans-serif: "Open Sans", sans-serif;
+    --sans-serif: "Roboto", sans-serif;
     --serif: "Cormorant Garamond", serif;
     --cursive: "Pacifico", cursive;
   }
@@ -96,7 +96,8 @@
     font-size: var(--h6);
   }
   a {
-    color: var(--lime);
+    color: var(--teal);
+    text-decoration: none;
   }
   a:hover {
     text-decoration: none;
